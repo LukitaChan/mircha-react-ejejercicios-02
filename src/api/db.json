@@ -1,0 +1,44 @@
+{
+  "saint": [
+    {
+      "id": 1,
+      "name": "Seiya",
+      "constellation": "Pegaso"
+    },
+    {
+      "id": 2,
+      "name": "Shiryu",
+      "constellation": "Dragon"
+    },
+    {
+      "id": 3,
+      "name": "Hyoga",
+      "constellation": "Cisne"
+    },
+    {
+      "id": 4,
+      "name": "Shun",
+      "constellation": "Andromeda"
+    },
+    {
+      "id": 5,
+      "name": "Ikki",
+      "constellation": "Phoenix"
+    },
+    {
+      "id": 1649645907348,
+      "name": "Mu",
+      "constellation": "Aries"
+    },
+    {
+      "id": 1649645912145,
+      "name": "Aiora",
+      "constellation": "Leo"
+    },
+    {
+      "id": 1649645920679,
+      "name": "Afrodita",
+      "constellation": "Picis"
+    }
+  ]
+}

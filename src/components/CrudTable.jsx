@@ -17,18 +17,22 @@ const CrudTable = ({data, setDataToEdit, deleteData}) => {
           </tr>
         </thead>
         <tbody>
-          {/* p.e. la base de datos que se crea (data) llega vacia, su longitud sea cero. Hacemos un condicional Render() para decir una advertencia o condicion. */}
-          {data.length === 0 ? (
-            <tr>
-              <td colSpan='3'>Sin Data</td>
-              {/* 2. CrudTableRow hereda props de CrudTable, en este caso setDataToEdit, deleteData. De alli pasamos a el componente CrudTableRow.jsx*/}
-            </tr>) : (data.map((el) => 
+          {/* p.e. la base de datos que se crea (data) llega vacia, su longitud sea cero. Hacemos un condicional Render() para decir una advertencia o condicion. 
+          act. Si la longitud de data es mayor a cero (hay data) entonces que se haga el mapeo, caso contrario sin-data*/}
+          {data.length > 0 ? (
+            data.map((el) => (
             <CrudTableRow 
             key={el.id} 
             el={el} 
             setDataToEdit={setDataToEdit}
             deleteData={deleteData}
-            /> ))}
+            /> ))
+           ) : ( 
+           <tr>
+              <td colSpan='3'>Sin Data</td>
+              {/* 2. CrudTableRow hereda props de CrudTable, en este caso setDataToEdit, deleteData. De alli pasamos a el componente CrudTableRow.jsx*/}
+            </tr> )}
+
           {/* 
           Este apartado se va un nuevo componente: CrudTableRow.jsx
           <tr>
